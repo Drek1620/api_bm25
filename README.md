@@ -34,3 +34,14 @@ La API queda en:
 ```bash
 pytest
 ```
+
+## Deploy en Render
+
+Este proyecto fija Python 3.11.9 en `runtime.txt` para evitar fallos de compilacion de dependencias nativas como `py-rust-stemmers`.
+
+Configura tu Web Service en Render con:
+
+- Build Command: `pip install -r requirements.txt`
+- Start Command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+
+Si ya tenias un servicio creado con otra version de Python, haz un redeploy despues de este cambio.
