@@ -1,52 +1,35 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# dependencies
-/node_modules
-/.pnp
-<<<<<<< HEAD
-.pnp.js
-=======
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
->>>>>>> 6bda790 (Initial commit from Create Next App)
+# Virtual environments
+.venv/
+venv/
+env/
 
-# testing
-/coverage
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# next.js
-/.next/
-/out/
+# Coverage reports
+.coverage
+.coverage.*
+htmlcov/
 
-# production
-/build
+# Build artifacts
+build/
+dist/
+*.egg-info/
 
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-<<<<<<< HEAD
-
-# local env files
-.env*.local
+# Environment files
 .env
-=======
-.pnpm-debug.log*
+.env.*
+!.env.example
 
-# env files (can opt-in for committing if needed)
-.env*
->>>>>>> 6bda790 (Initial commit from Create Next App)
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
